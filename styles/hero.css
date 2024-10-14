@@ -1,0 +1,50 @@
+.hero {
+    height: 100vh;
+    background-image: url("../assets/images/hero.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.hero__heading {
+    font-size: 48px;
+}
+
+.hero__form {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hero__login-link {
+    color: black;
+}
+
+.hero__address-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.hero__address-input {
+    border: none;
+}
+
+.hero__deliver-now {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.hero__search-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px;
+}

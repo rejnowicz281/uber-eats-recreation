@@ -1,5 +1,12 @@
-nav {
-    background-color: white;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.header__nav {
     padding: 0 10px;
     height: 64px;
     font-weight: 600;
@@ -8,22 +15,22 @@ nav {
     align-items: center;
 }
 
-.logo > img {
+.header__logo-img {
     scale: 0.67;
 }
 
-.login-link {
+.header__login-link {
     background-color: white;
     color: black;
 }
 
-.register-link {
+.header__register-link {
     background-color: black;
     color: white;
 }
 
-.login-link,
-.register-link {
+.header__login-link,
+.header__register-link {
     border-radius: 500px;
     margin-right: 16px;
     height: 36px;
