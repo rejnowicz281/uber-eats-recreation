@@ -1,0 +1,42 @@
+.city-section {
+    margin: 65px 15px;
+}
+
+.city-section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
+}
+
+.city-section__heading {
+    margin: 0;
+}
+
+.city-section__all-link {
+    color: black;
+    font-weight: 600;
+}
+
+.city-section__map {
+    height: 300px;
+    background-color: lightgray;
+}
+
+.city-section__list {
+    margin: 25px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 25px;
+}
+
+.city-section__list__link {
+    text-decoration: none;
+    color: black;
+}
+
+.city-section__cities-near,
+.city-section__uber-cities {
+    margin: 25px 0;
+}
