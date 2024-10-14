@@ -40,3 +40,14 @@
 .city-section__uber-cities {
     margin: 25px 0;
 }
+
+.city-section__more-info-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.city-section__more-info-link__decorated {
+    text-decoration: underline;
+}
