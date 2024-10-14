@@ -1,0 +1,32 @@
+nav {
+    background-color: white;
+    padding: 0 10px;
+    height: 64px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > img {
+    scale: 0.67;
+}
+
+.login-link {
+    background-color: white;
+    color: black;
+}
+
+.register-link {
+    background-color: black;
+    color: white;
+}
+
+.login-link,
+.register-link {
+    border-radius: 500px;
+    margin-right: 16px;
+    height: 36px;
+    padding: 12px;
+    text-decoration: none;
+}
