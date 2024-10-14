@@ -1,0 +1,23 @@
+.help-section {
+    margin: 65px 15px;
+    display: flex;
+}
+
+.help-section__card {
+    flex: 1;
+    margin: 10px;
+}
+
+.help-section__card__img {
+    width: 100%;
+    height: auto;
+}
+
+.help-section__card__heading {
+    font-weight: 600;
+}
+
+.help-section__card__link {
+    color: black;
+    font-weight: 600;
+}
