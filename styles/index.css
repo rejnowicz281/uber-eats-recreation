@@ -1,9 +1,14 @@
 @font-face {
-    font-family: "UberMove";
+    font-family: "UberMoveText";
     src: url("../assets/fonts/UberMoveTextRegular.otf");
+}
+
+@font-face {
+    font-family: "UberMoveMedium";
+    src: url("../assets/fonts/UberMoveMedium.otf");
 }
 
 body {
     margin: 0;
-    font-family: "UberMove", sans-serif;
+    font-family: "UberMoveText", sans-serif;
 }

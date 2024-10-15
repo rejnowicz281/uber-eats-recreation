@@ -1,5 +1,5 @@
 .city-section {
-    margin: 65px 15px;
+    margin: 85px 40px;
 }
 
 .city-section__header {
@@ -11,6 +11,9 @@
 
 .city-section__heading {
     margin: 0;
+    line-height: 44px;
+    font-size: 36px;
+    font-family: UberMoveMedium;
 }
 
 .city-section__all-link {
@@ -36,12 +39,12 @@
     color: black;
 }
 
-.city-section__cities-near,
-.city-section__uber-cities {
-    margin: 25px 0;
+.city-section__cities-near {
+    margin-bottom: 80px;
 }
 
 .city-section__more-info-link {
+    margin-top: 30px;
     display: block;
     text-align: center;
     text-decoration: none;

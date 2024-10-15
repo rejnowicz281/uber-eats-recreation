@@ -4,7 +4,7 @@
 }
 
 .footer__content {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -20,6 +20,11 @@
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.footer__download-links {
+    display: flex;
+    gap: 16px;
 }
 
 .footer__top-right {
@@ -51,18 +56,20 @@
 
 .footer__bottom {
     padding-top: 40px;
+    padding-bottom: 25px;
     display: flex;
     gap: 25px;
+    font-size: 14px;
 }
 
 .footer__bottom__links {
     display: flex;
-    gap: 25px;
+    gap: 50px;
 }
 
 .footer__bottom__links > a {
     text-decoration: none;
-    color: black;
+    color: rgb(83, 83, 83);
 }
 
 .footer__bottom__links > a:hover {
@@ -75,6 +82,11 @@
 }
 
 .footer__signed {
+    color: rgb(83, 83, 83);
     display: flex;
-    padding: 0 35px;
+    justify-content: space-between;
+    padding: 0 10px 0 40px;
+    gap: 25px;
+    font-size: 14px;
+    line-height: 20px;
 }

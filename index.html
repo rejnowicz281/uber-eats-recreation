@@ -30,34 +30,38 @@
                 <h1 class="hero__heading">Zamów dostawę w Twojej okolicy</h1>
                 <form class="hero__form">
                     <div class="hero__address-container">
-                        <img src="assets/images/location.svg" alt="Location" />
+                        <img
+                            class="hero__address-container__location-svg"
+                            src="assets/images/location.svg"
+                            alt="Location"
+                        />
                         <input class="hero__address-input" type="text" placeholder="Wpisz adres dostawy" />
                     </div>
-                    <button class="hero__deliver-now">
+                    <button type="button" class="hero__deliver-now">
                         <img src="assets/images/time.svg" alt="Time" />
                         <div class="hero__deliver-now__text" type="button">Dostarcz teraz</div>
                         <img src="assets/images/arrow-down.svg" alt="Arrow down" />
                     </button>
-                    <button class="hero__search-button" type="submit">Wyszukaj restauracje</button>
+                    <button class="hero__search-button" type="button">Wyszukaj restauracje</button>
                 </form>
-                <p>Lub <a class="hero__login-link" href="#"> zaloguj się </a></p>
+                <p class="hero__login-invitation">Lub <a class="hero__login-link" href="#"> Zaloguj się </a></p>
             </section>
             <section class="help-section">
-                <div class="help-section__card">
+                <a href="#" class="help-section__card">
                     <img class="help-section__card__img" src="assets/images/laptopfood.webp" alt="Laptop Food" />
                     <h2 class="help-section__card__heading">Zadbaj o posiłki dla pracowników</h2>
-                    <a class="help-section__card__link" href="#">Utwórz konto firmowe</a>
-                </div>
-                <div class="help-section__card">
+                    <span class="help-section__card__link">Utwórz konto firmowe</span>
+                </a>
+                <a href="#" class="help-section__card">
                     <img class="help-section__card__img" src="assets/images/cooking.webp" alt="Cooking" />
                     <h2 class="help-section__card__heading">Ty zapewniasz menu, a my dostawę</h2>
-                    <a class="help-section__card__link" href="#">Dodaj swoją restaurację</a>
-                </div>
-                <div class="help-section__card">
+                    <span class="help-section__card__link">Dodaj swoją restaurację</span>
+                </a>
+                <a href="#" class="help-section__card">
                     <img class="help-section__card__img" src="assets/images/bikeride.webp" alt="Bike Courier" />
-                    <h2 class="help-section__card_heading">Realizuj dostawy z Uber Eats</h2>
-                    <a class="help-section__card__link" href="#">Zarejestruj się, aby realizować dostawy</a>
-                </div>
+                    <h2 class="help-section__card__heading">Realizuj dostawy z Uber Eats</h2>
+                    <span class="help-section__card__link">Zarejestruj się, aby realizować dostawy</span>
+                </a>
             </section>
             <section class="city-section">
                 <div class="city-section__cities-near">
@@ -193,11 +197,11 @@
                     </div>
                 </div>
                 <div class="footer__signed">
-                    <p>
+                    <div>
                         Ta strona jest chroniona z użyciem kodu reCAPTCHA. Obowiązują dokumenty: Polityka prywatności
                         oraz Warunki korzystania z usługi firmy Google.
-                    </p>
-                    <p>© 2024 Uber Technologies Inc.</p>
+                    </div>
+                    <div>© 2024 Uber Technologies Inc.</div>
                 </div>
             </div>
         </footer>
