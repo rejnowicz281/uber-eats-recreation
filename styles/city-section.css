@@ -5,6 +5,7 @@
 .city-section__header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 0 25px 0;
 }

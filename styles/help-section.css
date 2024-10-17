@@ -26,3 +26,10 @@
     color: black;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .help-section {
+        flex-direction: column;
+        gap: 48px;
+    }
+}
