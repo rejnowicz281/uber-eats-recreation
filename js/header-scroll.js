@@ -1,5 +1,3 @@
-// Header scroll effect
-
 const header = document.querySelector(".header");
 const loginLink = document.querySelector(".header__login-link");
 
