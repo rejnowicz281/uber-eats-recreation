@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/index.css" />
         <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="styles/hero.css" />
@@ -26,6 +27,32 @@
                     ></path>
                 </svg>
                 <input class="search-modal__input" type="text" placeholder="Wyszukaj adres" />
+            </div>
+        </div>
+        <div class="scheduler-modal modal display-none">
+            <button class="scheduler-modal__close">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" color="contentPrimary">
+                    <title>Zamknij</title>
+                    <path
+                        d="m21.1 5.1-2.2-2.2-6.9 7-6.9-7-2.2 2.2 7 6.9-7 6.9 2.2 2.2 6.9-7 6.9 7 2.2-2.2-7-6.9 7-6.9Z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+            </button>
+            <div class="scheduler-modal__main">
+                <h6 class="scheduler-modal__heading">Wybierz godzinę</h6>
+                <div class="scheduler-modal__selects">
+                    <select class="scheduler-modal__select scheduler-modal__day-select" name="day" id="day"></select>
+                    <select class="scheduler-modal__select scheduler-modal__time-select" name="time" id="time"></select>
+                </div>
+                <div class="scheduler-modal__buttons">
+                    <button class="scheduler-modal__button scheduler-modal__schedule-button" type="button">
+                        Zaplanuj
+                    </button>
+                    <button class="scheduler-modal__button scheduler-modal__deliver-now-button" type="button">
+                        Dostarcz teraz
+                    </button>
+                </div>
             </div>
         </div>
         <header class="header">
@@ -261,8 +288,8 @@
                 </div>
             </div>
         </footer>
-        <script src="js/header-scroll.js"></script>
-        <script src="js/delivery-option-section.js"></script>
-        <script src="js/modals.js"></script>
+        <script src="./js/header-scroll.js" type="module"></script>
+        <script src="./js/delivery-option-section.js" type="module"></script>
+        <script src="./js/modals.js" type="module"></script>
     </body>
 </html>

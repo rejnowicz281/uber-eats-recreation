@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    z-index: 10;
 }
 
 .header--scrolled {
@@ -57,7 +58,8 @@
 
 .search-modal {
     min-height: 216px;
-    max-width: 500px;
+    max-width: 450px;
+    padding: 24px;
     width: 100%;
 }
 

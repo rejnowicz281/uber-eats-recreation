@@ -1,24 +1,30 @@
 const modalOverlay = document.querySelector(".modal-overlay");
-const modalBase = document.querySelector(".modal");
+const allModals = document.querySelectorAll(".modal");
 const body = document.querySelector("body");
 
-const showModal = (modalType) => {
-    const modalElement = modalType === "search" ? document.querySelector(".search-modal") : modalBase;
+const getModalElement = (modalType) => {
+    if (modalType === "search") return document.querySelector(".search-modal");
+
+    if (modalType === "scheduler") return document.querySelector(".scheduler-modal");
+
+    return document.querySelector(".modal");
+};
+
+export const showModal = (modalType) => {
+    const modalElement = getModalElement(modalType);
 
     modalOverlay.classList.remove("display-none");
     modalElement.classList.remove("display-none");
     body.classList.add("overflow-hidden");
 };
 
-const hideModal = (modalType) => {
-    const element = modalType === "search" ? document.querySelector(".search-modal") : modalBase;
-
+export const hideModal = () => {
     modalOverlay.classList.add("display-none");
-    element.classList.add("display-none");
+    allModals.forEach((modal) => modal.classList.add("display-none"));
     body.classList.remove("overflow-hidden");
 };
 
-modalOverlay.addEventListener("click", hideModal);
+modalOverlay.addEventListener("click", () => hideModal());
 
 const searchModalButton = document.querySelector(".header__search-button");
 
