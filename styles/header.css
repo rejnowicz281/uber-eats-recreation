@@ -24,6 +24,37 @@
     scale: 0.67;
 }
 
+.header__nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__search-button {
+    background-color: black;
+    opacity: 0;
+    border-radius: 36px;
+    gap: 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 36px;
+    line-height: 16px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-button:hover {
+    opacity: 0.8;
+}
+
+.header__search-button--scrolled {
+    opacity: 1;
+}
+
 .header__login-link {
     background-color: white;
     color: black;
