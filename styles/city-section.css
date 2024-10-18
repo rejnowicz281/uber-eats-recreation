@@ -28,7 +28,6 @@
     background-color: white;
     position: relative;
     margin-bottom: -60px;
-    z-index: -1;
 }
 
 .city-section__map > iframe {
@@ -40,6 +39,7 @@
 }
 
 .city-section__list {
+    position: relative;
     margin: 25px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
