@@ -32,6 +32,12 @@ deliverNowOption.addEventListener("click", () => {
 const schedulerModalButton = document.getElementById("schedule-later-option");
 const daySelect = document.querySelector(".scheduler-modal__day-select");
 const timeSelect = document.querySelector(".scheduler-modal__time-select");
+const schedulerModalCloseButton = document.querySelector(".scheduler-modal__close");
+
+schedulerModalCloseButton.addEventListener("click", () => {
+    hideModal();
+    hideDropdown();
+});
 
 const setDays = () => {
     const days = [];
