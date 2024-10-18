@@ -33,14 +33,12 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -59px;
+    top: 0;
     left: 0;
 }
 
 .city-section__list {
     margin: 25px 0;
-    position: relative;
-    top: -60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -66,4 +64,36 @@
 
 .city-section__more-info-link__decorated {
     text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .city-section {
+        margin: 85px 25px;
+    }
+
+    .city-section__heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .city-section__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .city-section {
+        margin: 85px 25px;
+    }
+
+    .city-section__heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .city-section__list {
+        display: flex;
+        flex-direction: column;
+    }
 }

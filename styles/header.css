@@ -14,7 +14,7 @@
 
 .header__nav {
     padding: 0 10px;
-    height: 64px;
+    min-height: 64px;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -131,4 +131,28 @@
 
 .header__login-link--scrolled {
     box-shadow: none;
+}
+
+@media (max-width: 700px) {
+    .header__nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__nav-left {
+        flex-direction: column;
+        padding: 9px 0;
+    }
+
+    .header__search-button {
+        opacity: 1;
+    }
+
+    .header__auth-link {
+        display: none;
+    }
+
+    .header__register-link {
+        margin-right: 0;
+    }
 }
