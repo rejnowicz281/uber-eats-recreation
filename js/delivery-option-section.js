@@ -3,6 +3,13 @@ import { hideModal, showModal } from "./modals.js";
 const deliveryOptionButton = document.getElementById("delivery-option-button");
 const deliveryOptionButtonText = document.querySelector(".hero__delivery-option__text");
 const dropdown = document.querySelector(".hero__delivery-options__dropdown");
+const schedulerModalDeliverNowButton = document.querySelector(".scheduler-modal__deliver-now-button");
+const deliverNowOption = document.getElementById("deliver-now-option");
+const schedulerModalButton = document.getElementById("schedule-later-option");
+const daySelect = document.querySelector(".scheduler-modal__day-select");
+const timeSelect = document.querySelector(".scheduler-modal__time-select");
+const schedulerModalCloseButton = document.querySelector(".scheduler-modal__close");
+const schedulerModalScheduleButton = document.querySelector(".scheduler-modal__schedule-button");
 
 const toggleDropdown = () => {
     dropdown.classList.toggle("hero__delivery-options__dropdown--show");
@@ -21,18 +28,11 @@ deliveryOptionButton.addEventListener("click", () => {
     toggleDropdown();
 });
 
-const deliverNowOption = document.getElementById("deliver-now-option");
-
 deliverNowOption.addEventListener("click", () => {
     setChosenOption("Dostarcz teraz");
 });
 
 // Scheduler Modal
-
-const schedulerModalButton = document.getElementById("schedule-later-option");
-const daySelect = document.querySelector(".scheduler-modal__day-select");
-const timeSelect = document.querySelector(".scheduler-modal__time-select");
-const schedulerModalCloseButton = document.querySelector(".scheduler-modal__close");
 
 schedulerModalCloseButton.addEventListener("click", () => {
     hideModal();
@@ -69,8 +69,6 @@ const setDays = () => {
 
     return days;
 };
-
-const days = setDays();
 
 const setTime = () => {
     const now = new Date();
@@ -118,15 +116,12 @@ const setTime = () => {
     timeSelect.addEventListener("change", (event) => {
         chosenTime = event.target.value;
     });
-
-    return intervals;
 };
 
+const days = setDays();
 setTime();
 
 schedulerModalButton.addEventListener("click", () => showModal("scheduler"));
-
-const schedulerModalDeliverNowButton = document.querySelector(".scheduler-modal__deliver-now-button");
 
 schedulerModalDeliverNowButton.addEventListener("click", () => {
     hideModal();
@@ -135,8 +130,6 @@ schedulerModalDeliverNowButton.addEventListener("click", () => {
 
 let chosenDate = days[0];
 let chosenTime = timeSelect.children[0].value;
-
-const schedulerModalScheduleButton = document.querySelector(".scheduler-modal__schedule-button");
 
 schedulerModalScheduleButton.addEventListener("click", () => {
     const text =

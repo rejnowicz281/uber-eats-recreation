@@ -1,6 +1,7 @@
 const modalOverlay = document.querySelector(".modal-overlay");
 const allModals = document.querySelectorAll(".modal");
 const body = document.querySelector("body");
+const searchModalButton = document.querySelector(".header__search-button");
 
 const getModalElement = (modalType) => {
     if (modalType === "search") return document.querySelector(".search-modal");
@@ -25,7 +26,5 @@ export const hideModal = () => {
 };
 
 modalOverlay.addEventListener("click", () => hideModal());
-
-const searchModalButton = document.querySelector(".header__search-button");
 
 searchModalButton.addEventListener("click", () => showModal("search"));
